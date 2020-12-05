@@ -48,6 +48,29 @@
 
 }
 
+.slider__dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+    font-size: 0;
+
+    & button {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        outline: 0;
+        margin: 0 6px;
+    }
+}
+
+.slick-active button {
+    background-color: #000;
+    border: none;
+}
+
 .footer {
     color: #fff;
     background-color: #595959;
